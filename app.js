@@ -1,5 +1,5 @@
 const selections = {
-  pressure: "customer emails, texts, calls, and form requests pile up before anyone can sort them",
+  pressure: "customer messages, forms, job requests, and office tasks pile up before anyone can sort them",
   tools: "your inbox, folders, spreadsheets, and documents",
   help: "sorts the work, spots what matters, and makes the next step clear",
 };
