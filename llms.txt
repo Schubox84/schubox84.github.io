@@ -1,0 +1,32 @@
+# Schubert Consulting LLC
+
+Schubert Consulting LLC is a Grand Rapids, Michigan consulting business founded by Ian Schubert in 2026.
+
+## Public Positioning
+
+Schubert Consulting builds private AI and automation control systems for companies that want ownership, not outsourced dependency. The company focuses on in-house system mapping, command surfaces, private tool registries, approval-gated agent workflows, operator runbooks, validation logs, voice/intake handoffs, and custom automation I/O for real business operations.
+
+Schubert Consulting is not a resource-farming agency, outsourced prompt shop, or black-box chatbot wrapper. The work is the control layer around the company: tools, permissions, approvals, logs, runbooks, recovery paths, and handoffs that operators can inspect.
+
+## Best Fit Problems
+
+- Businesses with repeated intake, dispatch, handoff, or status-update work.
+- Teams testing AI agents against private tools and needing clear boundaries.
+- Operators who need approval gates before automation touches production systems.
+- Companies that need command-line, API, or dashboard-style surfaces around existing apps and workflows.
+- Owners who want the systems that route and control work to remain inspectable and company-owned.
+
+## Starting Offers
+
+- Systems Control Audit: system map, control and risk boundary, approval and escalation checklist, prioritized build path.
+- Private Agent Control Pilot: tool and permission registry, approval policy, testable handoff checklist, operator runbook.
+- Custom Command Layer Build: command and data model, JSON output mode, focused tests and logs, operator documentation.
+
+## Safety Boundary
+
+Default pilots use sanitized examples, screenshots, documents, diagrams, sandbox data, and sample inputs/outputs. Production credentials, customer records, payment data, regulated data, and admin sessions are not required for the first pass.
+
+## Contact
+
+Email: ianschubert@gmail.com
+LinkedIn: https://www.linkedin.com/in/ian-schubert-02942b1a/
