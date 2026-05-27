@@ -16,7 +16,7 @@
   --white: #ffffff;
   --shadow: 0 28px 90px rgba(17, 21, 19, 0.22);
   --radius: 8px;
-  --header-height: 92px;
+  --header-height: 82px;
 }
 
 * {
@@ -108,12 +108,12 @@ button:focus-visible {
 .brand {
   display: inline-flex;
   align-items: center;
-  min-width: 224px;
+  min-width: 204px;
   text-decoration: none;
 }
 
 .brand-logo {
-  width: 210px;
+  width: 190px;
   height: auto;
   border-radius: 6px;
   filter: drop-shadow(0 10px 22px rgba(134, 198, 107, 0.2));
@@ -220,7 +220,7 @@ button:focus-visible {
   width: min(1280px, calc(100% - 36px));
   min-height: calc(100vh - var(--header-height));
   margin: 0 auto;
-  padding: clamp(70px, 8vw, 120px) 0 clamp(44px, 6vw, 82px);
+  padding: clamp(54px, 7vw, 92px) 0 clamp(34px, 5vw, 64px);
 }
 
 .hero-copy {
@@ -339,14 +339,14 @@ h3 {
 .transformation {
   width: min(1200px, calc(100% - 36px));
   margin: 0 auto;
-  padding: clamp(72px, 9vw, 126px) 0;
+  padding: clamp(52px, 7vw, 92px) 0;
 }
 
 .section-heading,
 .transformation-copy,
 .pilot-copy {
   max-width: 900px;
-  margin-bottom: 38px;
+  margin-bottom: 28px;
 }
 
 .section-heading p:not(.eyebrow),
@@ -377,8 +377,8 @@ h3 {
 }
 
 .work-grid article {
-  min-height: 236px;
-  padding: 24px;
+  min-height: 210px;
+  padding: 22px;
 }
 
 .work-grid span,
@@ -414,14 +414,14 @@ h3 {
   --scene-x: 0%;
   --scene-y: 4%;
   position: relative;
-  min-height: 520vh;
+  min-height: 380vh;
 }
 
 .scene-stage {
   position: sticky;
   top: var(--header-height);
   height: calc(100vh - var(--header-height));
-  min-height: 640px;
+  min-height: 560px;
   overflow: hidden;
   color: #fff;
   background: #0b100e;
@@ -476,15 +476,15 @@ meter {
   position: relative;
   z-index: 3;
   display: grid;
-  gap: 24vh;
+  gap: 12vh;
   width: min(560px, calc(100% - 36px));
   margin-left: clamp(18px, 8vw, 110px);
-  padding: 8vh 0 48vh;
+  padding: 6vh 0 28vh;
 }
 
 .scene-panels article {
-  min-height: 230px;
-  padding: 24px;
+  min-height: 202px;
+  padding: 22px;
   color: #fff;
   border: 1px solid rgba(255, 255, 255, 0.16);
   border-radius: var(--radius);
@@ -522,8 +522,8 @@ meter {
 }
 
 .process-list li {
-  min-height: 310px;
-  padding: 24px;
+  min-height: 270px;
+  padding: 22px;
 }
 
 .process-list strong {
@@ -544,8 +544,8 @@ meter {
 }
 
 .trust-grid article {
-  min-height: 210px;
-  padding: 22px;
+  min-height: 188px;
+  padding: 20px;
 }
 
 .pilot {
@@ -561,7 +561,7 @@ meter {
 }
 
 .pilot-tool {
-  padding: 22px;
+  padding: 20px;
   box-shadow: var(--shadow);
 }
 
@@ -682,7 +682,7 @@ legend {
 
 @media (max-width: 740px) {
   :root {
-    --header-height: 76px;
+    --header-height: 68px;
   }
 
   .site-header {
@@ -694,11 +694,11 @@ legend {
 
   .brand {
     min-width: 0;
-    max-width: 156px;
+    max-width: 142px;
   }
 
   .brand-logo {
-    width: 150px;
+    width: 132px;
   }
 
   .header-action {
@@ -717,8 +717,8 @@ legend {
   }
 
   .hero-layout {
-    padding-top: 48px;
-    padding-bottom: 38px;
+    padding-top: 38px;
+    padding-bottom: 30px;
   }
 
   .hero-media img {
@@ -764,7 +764,7 @@ legend {
   }
 
   .statement {
-    padding: 28px 14px;
+    padding: 22px 14px;
   }
 
   .statement p {
@@ -776,8 +776,8 @@ legend {
   .trust,
   .pilot,
   .transformation {
-    padding-top: 62px;
-    padding-bottom: 62px;
+    padding-top: 46px;
+    padding-bottom: 46px;
   }
 
   .work-grid,
@@ -800,8 +800,8 @@ legend {
   .scene-stage {
     position: relative;
     top: auto;
-    height: 72vh;
-    min-height: 480px;
+    height: 64vh;
+    min-height: 420px;
   }
 
   .scene-image {
@@ -816,10 +816,10 @@ legend {
   }
 
   .scene-panels {
-    gap: 14px;
+    gap: 10px;
     width: calc(100% - 28px);
-    margin: -42px auto 0;
-    padding: 0 0 16px;
+    margin: -30px auto 0;
+    padding: 0 0 10px;
   }
 
   .scene-panels article {
@@ -841,11 +841,11 @@ legend {
 
 @media (max-width: 520px) {
   .brand {
-    max-width: 146px;
+    max-width: 132px;
   }
 
   .brand-logo {
-    width: 140px;
+    width: 126px;
   }
 
   .header-action {
