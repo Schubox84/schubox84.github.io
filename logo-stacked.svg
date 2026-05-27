@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 260" role="img" aria-label="Schubert Consulting logo mark and wordmark">
-  <rect x="78" y="24" width="104" height="104" rx="22" fill="#101817"/>
-  <path d="M101 88h35c9 0 14-4.4 14-11.2 0-7.4-5.6-10.8-16-12.5l-10.4-1.6c-4.9-.8-7.2-2.6-7.2-5.6 0-3.4 3.1-5.7 9-5.7H157" fill="none" stroke="#f7f4ed" stroke-width="7" stroke-linecap="square" stroke-linejoin="miter"/>
-  <path d="M159 61h-35c-9 0-14 4.4-14 11.2 0 7.4 5.6 10.8 16 12.5l10.4 1.6c4.9.8 7.2 2.6 7.2 5.6 0 3.4-3.1 5.7-9 5.7H102" fill="none" stroke="#c56a24" stroke-width="7" stroke-linecap="square" stroke-linejoin="miter"/>
-  <path d="M101 112h58" stroke="#2f6651" stroke-width="7" stroke-linecap="square"/>
-  <text x="130" y="172" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="850" fill="#161b19">Schubert</text>
-  <text x="130" y="202" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="700" fill="#4f6470">Consulting LLC</text>
-  <path d="M73 224h114" stroke="#d8d0c2" stroke-width="4" stroke-linecap="square"/>
-</svg>
