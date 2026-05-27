@@ -422,7 +422,8 @@ h3 {
 
 .scene-shell {
   --scene-progress: 0;
-  --scene-x: 8%;
+  --scene-x: 0%;
+  --scene-y: 4%;
   position: relative;
   min-height: 440vh;
 }
@@ -444,10 +445,10 @@ h3 {
 }
 
 .scene-image {
-  background-image: url("assets/transformation-scene.svg");
+  background-image: url("assets/transformation-scene-professional.webp");
   background-repeat: no-repeat;
-  background-size: auto 112%;
-  background-position: var(--scene-x) center;
+  background-size: auto 132%;
+  background-position: var(--scene-x) var(--scene-y);
   transform: scale(1.03);
   transition: background-position 120ms linear;
 }
@@ -814,7 +815,7 @@ legend {
   }
 
   .scene-image {
-    background-size: auto 104%;
+    background-size: auto 112%;
     background-position: center center;
   }
 

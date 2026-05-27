@@ -21,9 +21,9 @@
     />
     <meta property="og:url" content="https://ianschubert.com/" />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://ianschubert.com/assets/transformation-scene.svg" />
+    <meta property="og:image" content="https://ianschubert.com/assets/transformation-scene-professional.webp" />
     <link rel="icon" href="assets/mark.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="styles.css" integrity="sha384-6o7bBDpXxrW7o9B5XOqLO2tpyITjnIk2vL3aY18g5eeyw8AFb5HgxaTYl5ldZkC4" crossorigin="anonymous" />
+    <link rel="stylesheet" href="styles.css" integrity="sha384-k1sK+rnLk/HDY5g51hFshiicp3gxxmBhaMMoHSy+Bp3i9NYjT/kwOgSZx0Mb2D55" crossorigin="anonymous" />
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -40,16 +40,16 @@
         <a href="#work">What we build</a>
         <a href="#transformation">How it changes</a>
         <a href="#process">Process</a>
-        <a href="#pilot">Pilot finder</a>
+        <a href="#pilot">Start here</a>
       </nav>
-      <a class="header-action" href="#pilot">Map a bottleneck</a>
+      <a class="header-action" href="#pilot">Find a stuck task</a>
     </header>
 
     <main id="main">
       <section class="hero" id="top" aria-label="Schubert Consulting overview">
         <div class="hero-media" aria-hidden="true">
           <picture>
-            <img src="assets/transformation-scene.svg" alt="" />
+            <img src="assets/transformation-scene-professional.webp" alt="" />
           </picture>
         </div>
         <div class="hero-shade" aria-hidden="true"></div>
@@ -61,7 +61,7 @@
               We map the messy handoffs, tools, decisions, and repeat work inside your company, then build a private AI system around that reality. No generic chatbot. No one-size-fits-all template.
             </p>
             <div class="hero-actions" aria-label="Primary actions">
-              <a class="button primary" href="#pilot">Map one bottleneck</a>
+              <a class="button primary" href="#pilot">Find one stuck task</a>
               <a class="button secondary" href="#work">See what this means</a>
             </div>
           </div>
@@ -235,52 +235,53 @@
 
       <section class="pilot" id="pilot">
         <div class="pilot-copy">
-          <p class="eyebrow">Pilot Finder</p>
-          <h2>Find the first useful AI system.</h2>
+          <p class="eyebrow">Start Here</p>
+          <h2>Pick one task your team keeps doing by hand.</h2>
           <p>
-            Pick the pressure, tools, and review level. The brief updates into a plain-English starting point for a first conversation.
+            No technical words required. Choose where work gets stuck, where it lives today, and what kind of help would save time. The box turns it into a plain starting point.
           </p>
         </div>
 
-        <form class="pilot-tool" aria-label="AI pilot finder">
+        <form class="pilot-tool" aria-label="Stuck task mapper">
           <fieldset>
-            <legend>Business pressure</legend>
+            <legend>What keeps slowing you down?</legend>
             <div class="segmented" data-choice="pressure">
-              <button class="is-active" type="button" data-value="too many emails and scattered intake">Intake</button>
-              <button type="button" data-value="slow quotes, proposals, and follow-up">Sales</button>
-              <button type="button" data-value="manual reports, files, and internal admin">Admin</button>
-              <button type="button" data-value="dispatch, scheduling, and status updates">Field work</button>
+              <button class="is-active" type="button" data-value="customer emails, texts, calls, and form requests pile up before anyone can sort them">Messages pile up</button>
+              <button type="button" data-value="quotes, estimates, proposals, or follow-ups take too long to prepare">Quotes take too long</button>
+              <button type="button" data-value="reports, forms, invoices, job notes, and other admin work gets copied by hand">Paperwork repeats</button>
+              <button type="button" data-value="jobs, schedules, dispatch, and customer updates require constant checking">Scheduling gets messy</button>
             </div>
           </fieldset>
 
           <fieldset>
-            <legend>Current tools</legend>
+            <legend>Where is that work today?</legend>
             <div class="segmented" data-choice="tools">
-              <button class="is-active" type="button" data-value="email, spreadsheets, and documents">Email/files</button>
-              <button type="button" data-value="CRM, calendar, and customer notes">CRM</button>
-              <button type="button" data-value="portals, dashboards, and browser steps">Portals</button>
-              <button type="button" data-value="APIs, databases, and structured records">Data/API</button>
+              <button class="is-active" type="button" data-value="your inbox, folders, spreadsheets, and documents">Inbox and files</button>
+              <button type="button" data-value="the business apps your team already uses">A few apps</button>
+              <button type="button" data-value="customer, vendor, or industry web portals">Web portals</button>
+              <button type="button" data-value="phone calls, texts, notebooks, memory, and staff experience">People and notes</button>
             </div>
           </fieldset>
 
           <fieldset>
-            <legend>Review level</legend>
-            <div class="segmented" data-choice="review">
-              <button type="button" data-value="read-only answers and summaries">Read-only</button>
-              <button class="is-active" type="button" data-value="draft-and-review work">Draft review</button>
-              <button type="button" data-value="approval-gated actions">Approval gate</button>
+            <legend>What would help most?</legend>
+            <div class="segmented" data-choice="help">
+              <button class="is-active" type="button" data-value="sorts the work, spots what matters, and makes the next step clear">Sort it</button>
+              <button type="button" data-value="drafts the reply, quote, summary, checklist, or report for a person to review">Draft it</button>
+              <button type="button" data-value="watches due dates, missing details, status changes, and follow-up">Remind us</button>
+              <button type="button" data-value="prepares the next action but waits for a human yes before anything important happens">Prep the next step</button>
             </div>
           </fieldset>
 
           <div class="pilot-output" aria-live="polite">
-            <span>Generated starting point</span>
+            <span>Plain-English starting point</span>
             <p id="pilotText">
-              Schubert Consulting should map too many emails and scattered intake across email, spreadsheets, and documents, then build a private AI pilot for draft-and-review work.
+              A good first project is to watch how customer emails, texts, calls, and form requests pile up before anyone can sort them in your inbox, folders, spreadsheets, and documents.
             </p>
           </div>
 
-          <a id="pilotMail" class="button primary full" href="mailto:ianschubert@gmail.com?subject=Schubert%20Consulting%20AI%20pilot">
-            Email this brief
+          <a id="pilotMail" class="button primary full" href="mailto:ianschubert@gmail.com?subject=Schubert%20Consulting%20stuck%20task%20map">
+            Email this starting point
           </a>
         </form>
       </section>
@@ -297,6 +298,6 @@
       </div>
     </footer>
 
-    <script type="module" src="app.js" integrity="sha384-HtKK6gCcm0qPl5U6UtMk0nCJ3HdWmqby7v8V2ZVJK5yaeK0gd7mjk6ftxkBHw7Ri" crossorigin="anonymous"></script>
+    <script type="module" src="app.js" integrity="sha384-FJiuHQ8a3aJk3HbfXHcIE3l9JM5YQ6w3c3yp/i3r8vvT6cUzsCzfGdR2jhK9jDHt" crossorigin="anonymous"></script>
   </body>
 </html>
