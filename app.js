@@ -8,6 +8,8 @@ const pilotText = document.getElementById("pilotText");
 const pilotMail = document.getElementById("pilotMail");
 
 function buildPilotBrief() {
+  if (!pilotText || !pilotMail) return;
+
   const text = `A good first project is to watch how ${selections.pressure} in ${selections.tools}. Schubert Consulting would map the real steps, then build a small private AI helper that ${selections.help}. Your team would know what the helper handles, what a person still approves, and how to change or shut it off.`;
   pilotText.textContent = text;
 
@@ -16,27 +18,29 @@ function buildPilotBrief() {
   pilotMail.href = `mailto:ianschubert@gmail.com?subject=${subject}&body=${body}`;
 }
 
-document.querySelectorAll("[data-choice]").forEach((group) => {
-  group.querySelectorAll("button[data-value]").forEach((button) => {
-    button.setAttribute("aria-pressed", String(button.classList.contains("is-active")));
-  });
-
-  group.addEventListener("click", (event) => {
-    const button = event.target.closest("button[data-value]");
-    if (!button) return;
-
-    group.querySelectorAll("button[data-value]").forEach((candidate) => {
-      const isActive = candidate === button;
-      candidate.classList.toggle("is-active", isActive);
-      candidate.setAttribute("aria-pressed", String(isActive));
+if (pilotText && pilotMail) {
+  document.querySelectorAll("[data-choice]").forEach((group) => {
+    group.querySelectorAll("button[data-value]").forEach((button) => {
+      button.setAttribute("aria-pressed", String(button.classList.contains("is-active")));
     });
 
-    selections[group.dataset.choice] = button.dataset.value;
-    buildPilotBrief();
-  });
-});
+    group.addEventListener("click", (event) => {
+      const button = event.target.closest("button[data-value]");
+      if (!button) return;
 
-buildPilotBrief();
+      group.querySelectorAll("button[data-value]").forEach((candidate) => {
+        const isActive = candidate === button;
+        candidate.classList.toggle("is-active", isActive);
+        candidate.setAttribute("aria-pressed", String(isActive));
+      });
+
+      selections[group.dataset.choice] = button.dataset.value;
+      buildPilotBrief();
+    });
+  });
+
+  buildPilotBrief();
+}
 
 const sceneHost = document.querySelector("[data-scroll-scene]");
 

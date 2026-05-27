@@ -23,22 +23,22 @@
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://ianschubert.com/assets/transformation-scene-professional.webp" />
     <link rel="icon" href="assets/schubert-mark-darkblue.webp" type="image/webp" />
-    <link rel="stylesheet" href="styles.css" integrity="sha384-2zfqntZa7TYRtI2atdsBWgVhIGpqM95JC5VesCAOOwTYabj+bM8WnYDFoPLtOvfA" crossorigin="anonymous" />
+    <link rel="stylesheet" href="styles.css" integrity="sha384-BnDvijO8FXQXAiGJyIKjfxidzifXmzUfZiqpOXbUoesJxviQuOTBwcOjXoPUXmvB" crossorigin="anonymous" />
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
 
     <header class="site-header">
-      <a class="brand" href="#top" aria-label="Schubert Consulting home">
+      <a class="brand" href="index.html" aria-label="Schubert Consulting home">
         <img class="brand-logo" src="assets/schubert-logo-darkblue.webp" alt="Schubert Consulting LLC" width="210" height="90" />
       </a>
       <nav class="nav-links" aria-label="Primary">
-        <a href="#work">What we build</a>
-        <a href="#transformation">How it changes</a>
-        <a href="#process">Process</a>
-        <a href="#pilot">Start here</a>
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="services.html">Services</a>
+        <a href="approach.html">Approach</a>
+        <a href="about.html">About</a>
       </nav>
-      <a class="header-action" href="#pilot">Find a stuck task</a>
+      <a class="header-action" href="contact.html#mapper">Start here</a>
     </header>
 
     <main id="main">
@@ -57,8 +57,8 @@
               We map the messy handoffs, tools, decisions, and repeat work inside your company, then build a private AI system around that reality. No generic chatbot. No one-size-fits-all template.
             </p>
             <div class="hero-actions" aria-label="Primary actions">
-              <a class="button primary" href="#pilot">Find one stuck task</a>
-              <a class="button secondary" href="#work">See what this means</a>
+              <a class="button primary" href="contact.html#mapper">Find one stuck task</a>
+              <a class="button secondary" href="services.html">See where this helps</a>
             </div>
           </div>
 
@@ -88,55 +88,45 @@
         </p>
       </section>
 
-      <section class="work" id="work">
-        <div class="section-heading">
-          <p class="eyebrow">What We Build</p>
-          <h2>Problem solving for commercial and industrial work.</h2>
+      <section class="work preview" id="work">
+        <div class="section-heading compact">
+          <p class="eyebrow">What To Bring</p>
+          <h2>Start where the operation keeps getting stuck.</h2>
           <p>
-            The useful starting point is usually one stuck place in the operation: bad input, repeated admin, slow floor handoffs, missed updates, tool trouble, or a process that depends too much on memory.
+            You do not need an AI plan. Bring one place where people keep retyping, searching, waiting, checking, correcting, or chasing status.
           </p>
         </div>
 
-        <div class="work-grid" aria-label="Example commercial and industrial consulting systems">
+        <div class="work-grid three" aria-label="Common starting points">
           <article>
             <span>01</span>
-            <h3>Office and admin flow</h3>
-            <p>Turn emails, forms, calls, job notes, and paperwork into clean next steps your team can review.</p>
+            <h3>Work depends on memory</h3>
+            <p>Job notes, customer details, approvals, and next steps live in too many heads, inboxes, files, or hallway conversations.</p>
           </article>
           <article>
             <span>02</span>
-            <h3>Commercial follow-up</h3>
-            <p>Prepare quotes, estimates, reminders, and customer updates before they disappear in inboxes.</p>
+            <h3>Inputs are messy</h3>
+            <p>Forms are incomplete, requests arrive differently every time, and bad information keeps turning into bad output.</p>
           </article>
           <article>
             <span>03</span>
-            <h3>Workfloor visibility</h3>
-            <p>Find where work stalls between people, machines, materials, forms, and approvals.</p>
+            <h3>Tools do not line up</h3>
+            <p>Your business apps, spreadsheets, portals, devices, and reports all matter, but they do not help people see the same picture.</p>
           </article>
-          <article>
-            <span>04</span>
-            <h3>Logistics and dispatch</h3>
-            <p>Coordinate schedules, job status, handoffs, and customer updates with less manual chasing.</p>
-          </article>
-          <article>
-            <span>05</span>
-            <h3>Software and IT snags</h3>
-            <p>Connect the tools you already use, reduce double entry, and make the useful information easier to find.</p>
-          </article>
-          <article>
-            <span>06</span>
-            <h3>Input quality checks</h3>
-            <p>Catch missing, messy, or wrong information early because bad input turns into bad output.</p>
-          </article>
+        </div>
+
+        <div class="section-actions">
+          <a class="button secondary light" href="services.html">Explore service areas</a>
+          <a class="button text-link" href="approach.html">See the working process</a>
         </div>
       </section>
 
       <section class="transformation" id="transformation" aria-labelledby="transformation-title">
         <div class="transformation-copy">
           <p class="eyebrow">The Transition</p>
-          <h2 id="transformation-title">From stuck operation to clearer system.</h2>
+          <h2 id="transformation-title">From moving parts to a business system people can understand.</h2>
           <p>
-            This work is not limited to office software. It can start in administration, the workfloor, logistics, IT, hardware, software, or the handoff between them.
+            The visual story is the work itself: gears, circuitry, roots, trees, and open sky. Operations become clearer when the system grows from the way the business already runs.
           </p>
         </div>
 
@@ -151,11 +141,6 @@
           </div>
 
           <div class="scene-panels" aria-label="Transformation stages">
-            <article data-stage="Problem first">
-              <span>Perspective</span>
-              <h3>Start with the problem, not the tool.</h3>
-              <p>Sometimes the fix is software. Sometimes it is hardware, layout, data quality, training, or a better handoff.</p>
-            </article>
             <article data-stage="Mechanical friction">
               <span>Operation</span>
               <h3>The business has moving parts.</h3>
@@ -168,26 +153,11 @@
             </article>
             <article data-stage="Bad input check">
               <span>Input</span>
-              <h3>Bad input becomes bad output.</h3>
-              <p>Before automating anything, we look for missing fields, unclear requests, duplicate entry, and unreliable sources.</p>
-            </article>
-            <article data-stage="Administration relief">
-              <span>Admin</span>
-              <h3>Office work gets lighter.</h3>
-              <p>Reports, quotes, forms, summaries, and follow-ups can be prepared faster while people still review the important parts.</p>
-            </article>
-            <article data-stage="Workfloor visibility">
-              <span>Floor</span>
-              <h3>The workfloor gets clearer.</h3>
-              <p>Status, materials, job notes, machine context, and next steps become easier to see before delays compound.</p>
-            </article>
-            <article data-stage="Logistics alignment">
-              <span>Logistics</span>
-              <h3>Handoffs stop hiding in the gaps.</h3>
-              <p>Dispatch, scheduling, customer updates, inventory, and vendor timing can be coordinated around real operating flow.</p>
+              <h3>Bad input gets caught early.</h3>
+              <p>Before automating anything, we look for missing fields, duplicate entry, unclear requests, and unreliable sources.</p>
             </article>
             <article data-stage="Rooted workflow">
-              <span>IT</span>
+              <span>Custom</span>
               <h3>The system grows from what you already use.</h3>
               <p>Existing software, portals, spreadsheets, sensors, files, and hardware can be connected without pretending one tool solves everything.</p>
             </article>
@@ -200,111 +170,18 @@
         </div>
       </section>
 
-      <section class="process" id="process">
-        <div class="section-heading">
-          <p class="eyebrow">Process</p>
-          <h2>Start small enough to prove, real enough to matter.</h2>
-        </div>
-        <ol class="process-list">
-          <li>
-            <span>01</span>
-            <strong>Watch the work</strong>
-            <p>Bring a real workflow, sanitized examples, screenshots, docs, or sample outputs. Production access is not required to begin.</p>
-          </li>
-          <li>
-            <span>02</span>
-            <strong>Pick the bottleneck</strong>
-            <p>We identify the first place AI can save time without creating new risk or confusion.</p>
-          </li>
-          <li>
-            <span>03</span>
-            <strong>Build the private pilot</strong>
-            <p>The pilot works around your tools and shows what AI prepares, what people approve, and what gets logged.</p>
-          </li>
-          <li>
-            <span>04</span>
-            <strong>Prove it and hand it off</strong>
-            <p>You get the map, test notes, runbook, open risks, and the next build path.</p>
-          </li>
-        </ol>
-      </section>
-
-      <section class="trust" aria-label="Trust and ownership">
+      <section class="home-cta" aria-label="Next step">
         <div>
-          <p class="eyebrow">Trust And Ownership</p>
-          <h2>Private AI should make your business safer to run.</h2>
-        </div>
-        <div class="trust-grid">
-          <article>
-            <h3>No production access to start</h3>
-            <p>Early work can use safe examples, diagrams, sample files, and screenshots.</p>
-          </article>
-          <article>
-            <h3>Human approval stays visible</h3>
-            <p>AI can inspect, draft, compare, and prepare. People approve high-risk moves.</p>
-          </article>
-          <article>
-            <h3>No anonymous pass-through</h3>
-            <p>Strategy, build, QA, and handoff stay in one accountable lane.</p>
-          </article>
-          <article>
-            <h3>The company keeps the map</h3>
-            <p>Logs, tests, policies, and runbooks make the system inspectable later.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="pilot" id="pilot">
-        <div class="pilot-copy">
-          <p class="eyebrow">Start Here</p>
-          <h2>Pick one task your team keeps doing by hand.</h2>
+          <p class="eyebrow">The First Move</p>
+          <h2>Bring one workflow that wastes time every week.</h2>
           <p>
-            No technical words required. Choose where work gets stuck, where it lives today, and what kind of help would save time. The box turns it into a plain starting point.
+            We will map it, identify the first safe AI pilot, and show what should stay human before automation touches anything important.
           </p>
         </div>
-
-        <form class="pilot-tool" aria-label="Stuck task mapper">
-          <fieldset>
-            <legend>What keeps slowing you down?</legend>
-            <div class="segmented" data-choice="pressure">
-              <button class="is-active" type="button" data-value="customer messages, forms, job requests, and office tasks pile up before anyone can sort them">Office work piles up</button>
-              <button type="button" data-value="workfloor handoffs, job status, materials, or machine context are hard to see in time">Floor work stalls</button>
-              <button type="button" data-value="dispatch, schedules, deliveries, inventory, or customer updates require constant checking">Logistics gets messy</button>
-              <button type="button" data-value="bad, missing, or repeated information keeps creating bad output downstream">Bad input causes rework</button>
-            </div>
-          </fieldset>
-
-          <fieldset>
-            <legend>Where is that work today?</legend>
-            <div class="segmented" data-choice="tools">
-              <button class="is-active" type="button" data-value="your inbox, folders, spreadsheets, and documents">Inbox and files</button>
-              <button type="button" data-value="business apps, accounting tools, calendars, and customer records your team already uses">Business apps</button>
-              <button type="button" data-value="customer, vendor, industry, shipping, or service web portals">Web portals</button>
-              <button type="button" data-value="machines, devices, labels, scanners, phone calls, notes, and staff memory">Floor and devices</button>
-            </div>
-          </fieldset>
-
-          <fieldset>
-            <legend>What would help most?</legend>
-            <div class="segmented" data-choice="help">
-              <button class="is-active" type="button" data-value="sorts the work, spots what matters, and makes the next step clear">Sort it</button>
-              <button type="button" data-value="checks the input before it creates bad output, rework, or missed details">Check it</button>
-              <button type="button" data-value="drafts the reply, quote, summary, checklist, work order, or report for a person to review">Draft it</button>
-              <button type="button" data-value="prepares the next action but waits for a human yes before anything important happens">Prep the next step</button>
-            </div>
-          </fieldset>
-
-          <div class="pilot-output" aria-live="polite">
-            <span>Plain-English starting point</span>
-            <p id="pilotText">
-              A good first project is to watch how customer messages, forms, job requests, and office tasks pile up before anyone can sort them in your inbox, folders, spreadsheets, and documents.
-            </p>
-          </div>
-
-          <a id="pilotMail" class="button primary full" href="mailto:ianschubert@gmail.com?subject=Schubert%20Consulting%20stuck%20task%20map">
-            Email this starting point
-          </a>
-        </form>
+        <div class="cta-actions">
+          <a class="button primary" href="contact.html#mapper">Map a stuck task</a>
+          <a class="button secondary light" href="about.html">Who you are working with</a>
+        </div>
       </section>
     </main>
 
@@ -313,12 +190,16 @@
         <strong>Schubert Consulting LLC</strong>
         <span>Grand Rapids, Michigan</span>
       </div>
-      <div class="footer-links">
+      <nav class="footer-links" aria-label="Footer">
+        <a href="services.html">Services</a>
+        <a href="approach.html">Approach</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
         <a href="mailto:ianschubert@gmail.com?subject=Schubert%20Consulting%20stuck%20task%20map">ianschubert@gmail.com</a>
         <a href="https://www.linkedin.com/in/ian-schubert-02942b1a/" rel="me noreferrer">LinkedIn</a>
-      </div>
+      </nav>
     </footer>
 
-    <script type="module" src="app.js" integrity="sha384-bKPjFCuoDIfCEuxpD1ShWHh5JoaGXcyrq57UxTmipF46DvsYkyap6XRNV5m8xhY6" crossorigin="anonymous"></script>
+    <script type="module" src="app.js" integrity="sha384-3Ox7GJFkC4agj+2EPrwrA9OinebImH3UA/WTYvZHvMuOT+Hpt+j0meE9nDXST1Sk" crossorigin="anonymous"></script>
   </body>
 </html>
