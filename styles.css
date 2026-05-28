@@ -1,18 +1,23 @@
 :root {
   color-scheme: light;
   --ink: #111513;
-  --deep: #090d0b;
-  --night: #111a17;
+  --brand-blue: #060e17;
+  --brand-blue-soft: #0a1823;
+  --deep: #060e17;
+  --night: #0d1c24;
   --forest: #173f31;
   --green: #2e7f56;
   --grass: #86c66b;
   --sky: #bfe3f0;
   --copper: #b8733d;
   --gold: #e6ba62;
-  --paper: #f4f0e8;
-  --panel: #fffaf0;
-  --line: #d8cdbd;
-  --muted: #58645d;
+  --paper: #d9d0bf;
+  --panel: #eadfcb;
+  --alt-surface: #cbc0ae;
+  --sage-surface: #d8e4d5;
+  --control-surface: #e0d3be;
+  --line: #b8aa95;
+  --muted: #4f5a55;
   --white: #ffffff;
   --shadow: 0 28px 90px rgba(17, 21, 19, 0.22);
   --radius: 8px;
@@ -100,8 +105,8 @@ button:focus-visible {
   min-height: var(--header-height);
   padding: 0 clamp(18px, 4vw, 54px);
   color: rgba(255, 255, 255, 0.9);
-  background: rgba(12, 17, 15, 0.88);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.11);
+  background: rgba(6, 14, 23, 0.94);
+  border-bottom: 1px solid rgba(133, 187, 206, 0.18);
   backdrop-filter: blur(18px);
 }
 
@@ -201,7 +206,7 @@ button:focus-visible {
   position: relative;
   overflow: hidden;
   color: #fff;
-  background: var(--deep);
+  background: var(--brand-blue);
 }
 
 .hero-media,
@@ -225,8 +230,8 @@ button:focus-visible {
 
 .hero-shade {
   background:
-    linear-gradient(90deg, rgba(5, 8, 7, 0.96) 0%, rgba(5, 8, 7, 0.86) 34%, rgba(5, 8, 7, 0.28) 69%, rgba(5, 8, 7, 0.52) 100%),
-    linear-gradient(180deg, rgba(5, 8, 7, 0.15), rgba(5, 8, 7, 0.92));
+    linear-gradient(90deg, rgba(6, 14, 23, 0.96) 0%, rgba(6, 14, 23, 0.86) 34%, rgba(6, 14, 23, 0.28) 69%, rgba(6, 14, 23, 0.52) 100%),
+    linear-gradient(180deg, rgba(6, 14, 23, 0.15), rgba(6, 14, 23, 0.92));
 }
 
 .hero-layout {
@@ -296,7 +301,7 @@ h3 {
   border: 1px solid rgba(255, 255, 255, 0.18);
   border-radius: var(--radius);
   background:
-    linear-gradient(180deg, rgba(16, 31, 25, 0.82), rgba(8, 13, 11, 0.9)),
+    linear-gradient(180deg, rgba(10, 24, 35, 0.86), rgba(6, 14, 23, 0.92)),
     repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.04) 0 1px, transparent 1px 36px);
   box-shadow: var(--shadow);
   backdrop-filter: blur(16px);
@@ -341,9 +346,9 @@ h3 {
   overflow: hidden;
   color: #fff;
   background:
-    linear-gradient(90deg, rgba(5, 8, 7, 0.96) 0%, rgba(5, 8, 7, 0.88) 48%, rgba(5, 8, 7, 0.56) 100%),
+    linear-gradient(90deg, rgba(6, 14, 23, 0.96) 0%, rgba(6, 14, 23, 0.88) 48%, rgba(6, 14, 23, 0.56) 100%),
     url("assets/transformation-scene-professional.webp") 60% center / cover no-repeat,
-    var(--deep);
+    var(--brand-blue);
 }
 
 .page-hero::after {
@@ -351,7 +356,7 @@ h3 {
   position: absolute;
   inset: auto 0 0;
   height: 44%;
-  background: linear-gradient(180deg, transparent, rgba(5, 8, 7, 0.72));
+  background: linear-gradient(180deg, transparent, rgba(6, 14, 23, 0.72));
 }
 
 .page-hero-copy {
@@ -406,7 +411,7 @@ h3 {
   width: 100%;
   max-width: none;
   padding-inline: max(18px, calc((100% - 1200px) / 2));
-  background: #ede5d8;
+  background: var(--alt-surface);
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
 }
@@ -477,7 +482,7 @@ h3 {
   border: 1px solid var(--line);
   border-radius: var(--radius);
   background: var(--panel);
-  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.82) inset;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.52) inset;
 }
 
 .work-grid article {
@@ -540,7 +545,7 @@ h3 {
   width: 100%;
   padding-bottom: 0;
   background:
-    linear-gradient(180deg, var(--paper) 0%, #eee6d8 34%, #dfead8 68%, #cfe6bc 100%);
+    linear-gradient(180deg, var(--paper) 0%, #d2c4b0 34%, #c7d5c1 68%, #b8d0a4 100%);
 }
 
 .transformation-copy {
@@ -563,7 +568,7 @@ h3 {
   min-height: 560px;
   overflow: hidden;
   color: #fff;
-  background: #0b100e;
+  background: var(--brand-blue);
 }
 
 .scene-image,
@@ -583,8 +588,8 @@ h3 {
 
 .scene-overlay {
   background:
-    linear-gradient(90deg, rgba(5, 8, 7, calc(0.74 - var(--scene-progress) * 0.2)) 0%, rgba(5, 8, 7, 0.3) 46%, rgba(235, 249, 255, calc(var(--scene-progress) * 0.28)) 100%),
-    linear-gradient(180deg, rgba(5, 8, 7, 0.08), rgba(5, 8, 7, 0.42));
+    linear-gradient(90deg, rgba(6, 14, 23, calc(0.74 - var(--scene-progress) * 0.2)) 0%, rgba(6, 14, 23, 0.3) 46%, rgba(235, 249, 255, calc(var(--scene-progress) * 0.28)) 100%),
+    linear-gradient(180deg, rgba(6, 14, 23, 0.08), rgba(6, 14, 23, 0.42));
 }
 
 .scene-readout {
@@ -714,7 +719,7 @@ meter {
   padding: 28px;
   border: 1px solid rgba(46, 127, 86, 0.3);
   border-radius: var(--radius);
-  background: #e8f3e8;
+  background: var(--sage-surface);
 }
 
 .secure-note h2 {
@@ -733,8 +738,8 @@ meter {
   color: #fff;
   border-radius: var(--radius);
   background:
-    linear-gradient(180deg, rgba(17, 26, 23, 0.95), rgba(12, 17, 15, 0.98)),
-    var(--deep);
+    linear-gradient(180deg, rgba(10, 24, 35, 0.95), rgba(6, 14, 23, 0.98)),
+    var(--brand-blue);
 }
 
 .about-card h2 {
@@ -756,7 +761,7 @@ meter {
   padding: 18px;
   border: 1px solid rgba(46, 127, 86, 0.28);
   border-radius: var(--radius);
-  background: #e8f3e8;
+  background: var(--sage-surface);
 }
 
 .contact-panel h3 {
@@ -809,7 +814,7 @@ legend {
   color: #25302b;
   border: 1px solid var(--line);
   border-radius: var(--radius);
-  background: #f8f2e8;
+  background: var(--control-surface);
   cursor: pointer;
   font-weight: 850;
   text-align: center;
@@ -826,7 +831,7 @@ legend {
   padding: 18px;
   border: 1px solid rgba(46, 127, 86, 0.32);
   border-radius: var(--radius);
-  background: #e8f3e8;
+  background: var(--sage-surface);
 }
 
 .pilot-output span {
@@ -849,7 +854,7 @@ legend {
   gap: 24px;
   padding: 32px clamp(18px, 4vw, 54px);
   color: rgba(255, 255, 255, 0.75);
-  background: var(--deep);
+  background: var(--brand-blue);
 }
 
 .site-footer div {
@@ -963,8 +968,8 @@ legend {
 
   .hero-shade {
     background:
-      linear-gradient(90deg, rgba(5, 8, 7, 0.98), rgba(5, 8, 7, 0.82)),
-      linear-gradient(180deg, rgba(5, 8, 7, 0.18), rgba(5, 8, 7, 0.92));
+      linear-gradient(90deg, rgba(6, 14, 23, 0.98), rgba(6, 14, 23, 0.82)),
+      linear-gradient(180deg, rgba(6, 14, 23, 0.18), rgba(6, 14, 23, 0.92));
   }
 
   h1 {
