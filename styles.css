@@ -11,13 +11,13 @@
   --sky: #bfe3f0;
   --copper: #b8733d;
   --gold: #e6ba62;
-  --paper: #d9d0bf;
-  --panel: #eadfcb;
-  --alt-surface: #cbc0ae;
-  --sage-surface: #d8e4d5;
-  --control-surface: #e0d3be;
-  --line: #b8aa95;
-  --muted: #4f5a55;
+  --paper: #aeb2a8;
+  --panel: #b8baad;
+  --alt-surface: #969d92;
+  --sage-surface: #9fb4a2;
+  --control-surface: #abb0a3;
+  --line: #6f746b;
+  --muted: #263633;
   --white: #ffffff;
   --shadow: 0 28px 90px rgba(17, 21, 19, 0.22);
   --radius: 8px;
@@ -34,7 +34,14 @@ html {
 
 body {
   margin: 0;
-  background: var(--paper);
+  background:
+    linear-gradient(90deg, rgba(6, 14, 23, 0.035) 1px, transparent 1px),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.026) 1px, transparent 1px),
+    linear-gradient(180deg, var(--paper) 0%, #9fa99f 100%);
+  background-size:
+    44px 44px,
+    44px 44px,
+    auto;
   color: var(--ink);
   font-family:
     Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
@@ -411,7 +418,16 @@ h3 {
   width: 100%;
   max-width: none;
   padding-inline: max(18px, calc((100% - 1200px) / 2));
-  background: var(--alt-surface);
+  background:
+    linear-gradient(90deg, rgba(6, 14, 23, 0.052) 1px, transparent 1px),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(135deg, rgba(6, 14, 23, 0.13), rgba(46, 127, 86, 0.07)),
+    var(--alt-surface);
+  background-size:
+    48px 48px,
+    48px 48px,
+    auto,
+    auto;
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
 }
@@ -481,8 +497,12 @@ h3 {
 .pilot-tool {
   border: 1px solid var(--line);
   border-radius: var(--radius);
-  background: var(--panel);
-  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.52) inset;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.02)),
+    var(--panel);
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.22) inset,
+    0 18px 42px rgba(6, 14, 23, 0.08);
 }
 
 .work-grid article {
@@ -545,7 +565,7 @@ h3 {
   width: 100%;
   padding-bottom: 0;
   background:
-    linear-gradient(180deg, var(--paper) 0%, #d2c4b0 34%, #c7d5c1 68%, #b8d0a4 100%);
+    linear-gradient(180deg, var(--paper) 0%, #9b9d8f 34%, #98aa97 68%, #90b36f 100%);
 }
 
 .transformation-copy {
@@ -719,7 +739,9 @@ meter {
   padding: 28px;
   border: 1px solid rgba(46, 127, 86, 0.3);
   border-radius: var(--radius);
-  background: var(--sage-surface);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.02)),
+    var(--sage-surface);
 }
 
 .secure-note h2 {
@@ -761,7 +783,9 @@ meter {
   padding: 18px;
   border: 1px solid rgba(46, 127, 86, 0.28);
   border-radius: var(--radius);
-  background: var(--sage-surface);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.02)),
+    var(--sage-surface);
 }
 
 .contact-panel h3 {
@@ -814,7 +838,9 @@ legend {
   color: #25302b;
   border: 1px solid var(--line);
   border-radius: var(--radius);
-  background: var(--control-surface);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.02)),
+    var(--control-surface);
   cursor: pointer;
   font-weight: 850;
   text-align: center;
@@ -831,7 +857,9 @@ legend {
   padding: 18px;
   border: 1px solid rgba(46, 127, 86, 0.32);
   border-radius: var(--radius);
-  background: var(--sage-surface);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.02)),
+    var(--sage-surface);
 }
 
 .pilot-output span {
