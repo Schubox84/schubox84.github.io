@@ -6,6 +6,7 @@ const selections = {
 
 const pilotText = document.getElementById("pilotText");
 const pilotMail = document.getElementById("pilotMail");
+const contactEmail = "contact@ianschubert.com";
 
 function buildPilotBrief() {
   if (!pilotText || !pilotMail) return;
@@ -15,7 +16,7 @@ function buildPilotBrief() {
 
   const subject = encodeURIComponent("Schubert Consulting stuck task map");
   const body = encodeURIComponent(`${text}\n\nBusiness:\n\nTask that gets stuck:\n\nWhere it happens today:\n\nBest next step:\n`);
-  pilotMail.href = `mailto:ianschubert@gmail.com?subject=${subject}&body=${body}`;
+  pilotMail.href = `mailto:${contactEmail}?subject=${subject}&body=${body}`;
 }
 
 if (pilotText && pilotMail) {
