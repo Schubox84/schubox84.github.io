@@ -7,6 +7,7 @@ const selections = {
 const pilotText = document.getElementById("pilotText");
 const pilotMail = document.getElementById("pilotMail");
 const contactEmail = "contact@ianschubert.com";
+const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
 function buildPilotBrief() {
   if (!pilotText || !pilotMail) return;
@@ -45,7 +46,40 @@ if (pilotText && pilotMail) {
 
 const sceneHost = document.querySelector("[data-scroll-scene]");
 
-if (sceneHost && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+if (document.body.classList.contains("home-page")) {
+  const updateHomeBackdrop = () => {
+    const scrollable = Math.max(1, document.documentElement.scrollHeight - window.innerHeight);
+    const progress = Math.min(Math.max(window.scrollY / scrollable, 0), 1);
+    const sceneX = progress * 100;
+    const sceneY = 4 + progress * 86;
+
+    document.body.style.setProperty("--home-bg-progress", progress.toFixed(3));
+    document.body.style.setProperty("--home-bg-x", `${sceneX.toFixed(2)}%`);
+    document.body.style.setProperty("--home-bg-y", `${sceneY.toFixed(2)}%`);
+  };
+
+  if (reducedMotion) {
+    document.body.style.setProperty("--home-bg-x", "50%");
+    document.body.style.setProperty("--home-bg-y", "50%");
+  } else {
+    let backdropTicking = false;
+
+    const requestBackdropUpdate = () => {
+      if (backdropTicking) return;
+      backdropTicking = true;
+      window.requestAnimationFrame(() => {
+        updateHomeBackdrop();
+        backdropTicking = false;
+      });
+    };
+
+    window.addEventListener("scroll", requestBackdropUpdate, { passive: true });
+    window.addEventListener("resize", requestBackdropUpdate);
+    updateHomeBackdrop();
+  }
+}
+
+if (sceneHost && !reducedMotion) {
   const advancedScene = document.createElement("script");
   advancedScene.type = "module";
   advancedScene.src = "scroll-scene.js";

@@ -52,6 +52,45 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+body.home-page {
+  --home-bg-progress: 0;
+  --home-bg-x: 0%;
+  --home-bg-y: 4%;
+  background: var(--brand-blue);
+  color: #fff;
+}
+
+body.home-page::before,
+body.home-page::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+body.home-page::before {
+  inset: -3%;
+  background-image: url("assets/transformation-scene-professional.webp");
+  background-repeat: no-repeat;
+  background-size: auto 134%;
+  background-position: var(--home-bg-x) var(--home-bg-y);
+  transform: scale(1.02);
+  transition: background-position 120ms linear;
+}
+
+body.home-page::after {
+  background:
+    linear-gradient(90deg, rgba(6, 14, 23, calc(0.88 - var(--home-bg-progress) * 0.18)) 0%, rgba(6, 14, 23, 0.58) 48%, rgba(6, 14, 23, calc(0.78 - var(--home-bg-progress) * 0.18)) 100%),
+    linear-gradient(180deg, rgba(6, 14, 23, 0.82) 0%, rgba(6, 14, 23, 0.52) 42%, rgba(6, 14, 23, 0.82) 100%);
+}
+
+body.home-page main,
+body.home-page .site-footer {
+  position: relative;
+  z-index: 1;
+}
+
 img,
 svg {
   display: block;
@@ -239,6 +278,14 @@ button:focus-visible {
   background:
     linear-gradient(90deg, rgba(6, 14, 23, 0.96) 0%, rgba(6, 14, 23, 0.86) 34%, rgba(6, 14, 23, 0.28) 69%, rgba(6, 14, 23, 0.52) 100%),
     linear-gradient(180deg, rgba(6, 14, 23, 0.15), rgba(6, 14, 23, 0.92));
+}
+
+body.home-page .hero {
+  background: transparent;
+}
+
+body.home-page .hero-media {
+  display: none;
 }
 
 .hero-layout {
@@ -670,6 +717,69 @@ meter {
   margin-bottom: 0;
   color: rgba(255, 255, 255, 0.74);
   font-size: 1.05rem;
+}
+
+body.home-page .statement {
+  background: rgba(23, 63, 49, 0.82);
+  backdrop-filter: blur(14px);
+}
+
+body.home-page .work.preview,
+body.home-page .transformation,
+body.home-page .home-cta {
+  color: #fff;
+  background: transparent;
+  border-top-color: rgba(255, 255, 255, 0.16);
+}
+
+body.home-page .transformation {
+  padding-top: clamp(52px, 7vw, 92px);
+}
+
+body.home-page .section-heading p:not(.eyebrow),
+body.home-page .transformation-copy p,
+body.home-page .home-cta p,
+body.home-page .work-grid p {
+  color: rgba(255, 255, 255, 0.74);
+}
+
+body.home-page .work-grid article {
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.18);
+  background:
+    linear-gradient(180deg, rgba(11, 26, 37, 0.82), rgba(6, 14, 23, 0.72)),
+    rgba(6, 14, 23, 0.66);
+  box-shadow: 0 26px 70px rgba(0, 0, 0, 0.28);
+  backdrop-filter: blur(16px);
+}
+
+body.home-page .work-grid span,
+body.home-page .scene-panels span {
+  color: var(--gold);
+}
+
+body.home-page .button.secondary.light {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+body.home-page .button.text-link {
+  color: var(--grass);
+}
+
+body.home-page .scene-stage {
+  background: transparent;
+}
+
+body.home-page .scene-image {
+  display: none;
+}
+
+body.home-page .scene-overlay {
+  background:
+    linear-gradient(90deg, rgba(6, 14, 23, 0.78) 0%, rgba(6, 14, 23, 0.3) 48%, rgba(6, 14, 23, 0.6) 100%),
+    linear-gradient(180deg, rgba(6, 14, 23, 0.14), rgba(6, 14, 23, 0.58));
 }
 
 .process {
