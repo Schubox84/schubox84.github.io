@@ -1071,10 +1071,7 @@ legend {
   }
 
   .header-action {
-    min-height: 40px;
-    margin-left: auto;
-    padding: 8px 11px;
-    font-size: 0.82rem;
+    display: none;
   }
 
   .hero-layout,
