@@ -18,10 +18,10 @@ window.SCHUBERT_OFFERS = [
     href: "contact.html?product=AI%20R%26D%20Systems%20Sprint#mapper"
   },
   {
-    id: "grant-partner-packet",
-    name: "Grant and Partner Packet",
+    id: "rd-funding-opportunity-packet",
+    name: "R&D Funding Opportunity Packet",
     priceAnchor: "Request scope",
-    href: "contact.html?product=Grant%20and%20Partner%20Packet#mapper"
+    href: "contact.html?product=R%26D%20Funding%20Opportunity%20Packet#mapper"
   },
   {
     id: "robotics-build-retainer",

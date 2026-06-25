@@ -13,9 +13,9 @@ const contactEmail = "schubertconsultingllc@ianschubert.com";
 
 function buildPilotBrief() {
   if (!pilotText || !pilotMail) return;
-  const text = `Engagement: ${selections.product}. Price anchor: ${selections.price}. Goal: ${selections.detail}. Environment: ${selections.environment}. First proof target: ${selections.proof}. Desired movement: ${selections.urgency}. Next step: confirm scope, available materials, technical constraints, and what evidence would make the next build worth funding.`;
+  const text = `Engagement: ${selections.product}. Price anchor: ${selections.price}. Goal: ${selections.detail}. Environment: ${selections.environment}. First proof target: ${selections.proof}. Desired movement: ${selections.urgency}. Next step: confirm scope, available materials, technical constraints, and any grant or R&D funding opportunity information that can be forwarded.`;
   pilotText.textContent = text;
-  pilotMail.href = `mailto:${contactEmail}?subject=${encodeURIComponent("Schubert Consulting brief: " + selections.product)}&body=${encodeURIComponent(text + "\n\nName:\nOrganization:\nPhone/email:\nLocation/site details:\nRobotics or AI R&D context:\nRelevant links/files/examples:\n")}`;
+  pilotMail.href = `mailto:${contactEmail}?subject=${encodeURIComponent("Schubert Consulting brief: " + selections.product)}&body=${encodeURIComponent(text + "\n\nName:\nOrganization:\nPhone/email:\nLocation/site details:\nRobotics or AI R&D context:\nKnown grant or R&D funding opportunities to forward:\nRelevant links/files/examples:\n")}`;
 }
 
 function activateButton(button) {
