@@ -8,12 +8,11 @@ Primary public focus:
 - Applied automation
 - Embedded sensing
 - Prototype evidence
-- Research and development work that needs funding support
-- Grant opportunity discovery
+- Looking for grants and funding to continue research and development
 
 Public language:
 - Schubert Consulting LLC is the company.
-- When grants are discussed, say Schubert Consulting LLC is looking for grant opportunities and appreciates forwarded information.
+- When grants or funding are discussed, say Schubert Consulting LLC is looking for grants and funding to continue research and development and appreciates forwarded information.
 - Do not use outside product or brand names for the company.
 - Do not invent a specific first product, market, customer, deployed system, approved funding, patent, certification, or production autonomy unless Ian confirms it.
 
