@@ -1,0 +1,19 @@
+# Schubert Consulting LLC
+
+Schubert Consulting LLC is a Michigan company focused on the Aerosyn robotics line: autonomous AI vehicle-inspection stations for automotive shops, fleets, insurers, and maintenance pilots.
+
+Primary public focus:
+- Aerosyn autonomous AI vehicle-inspection stations
+- Fixed gantry / drive-through inspection workflow
+- Computer vision, OBD-II context, edge AI, and advisor-reviewed reports
+- Design-partner pilots for shops, fleets, insurers, and funding partners
+- Non-dilutive funding path: compute credits, Michigan support, SBIR readiness, and consulting revenue
+
+Stage:
+- Concept / early prototype
+- Phase 0 software demo and Phase 1 physical inspection MVP are the current targets
+- The system observes, reasons, documents, and supports human review; it does not repair vehicles in Phase 1
+
+Contact:
+- Schubert Consulting LLC
+- Email: schubertconsultingllc@ianschubert.com
