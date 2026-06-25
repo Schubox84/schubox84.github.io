@@ -207,7 +207,7 @@ a:focus-visible, button:focus-visible { outline: 3px solid rgba(134,198,107,.75)
   margin: 0 auto;
   padding: 1.1rem clamp(1rem, 4vw, 2rem);
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 1px;
 }
 .signal-strip span {
