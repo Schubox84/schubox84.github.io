@@ -1,7 +1,7 @@
 const selections = {
-  product: "Robotics / AI R&D Readiness Brief",
-  price: "Scoped engagement",
-  detail: "turn one robotics or AI R&D direction into a problem statement, system boundary, risk list, and next experiment",
+  product: "Robotics Readiness Sprint",
+  price: "$750 launch",
+  detail: "map one robot, workcell, support workflow, inspection route, simulation/test path, or robot-adjacent handoff and identify the first safe fix",
   environment: "robotics, AI R&D, prototype, lab, workcell, or physical automation environment",
   proof: "technical feasibility, system boundary, risk, and next experiment",
   urgency: "this week",
