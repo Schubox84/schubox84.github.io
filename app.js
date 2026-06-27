@@ -1,10 +1,8 @@
 const selections = {
-  product: "Robotics Readiness Sprint",
-  price: "$750 launch",
-  detail: "map one robot, workcell, support workflow, inspection route, simulation/test path, or robot-adjacent handoff and identify the first safe fix",
-  environment: "robotics, AI R&D, prototype, lab, workcell, or physical automation environment",
-  proof: "technical feasibility, system boundary, risk, and next experiment",
-  urgency: "this week",
+  area: "robotics",
+  help: "hardware",
+  goal: "see if it's feasible",
+  timeframe: "this week",
 };
 
 const pilotText = document.getElementById("pilotText");
@@ -13,9 +11,9 @@ const contactEmail = "schubertconsultingllc@ianschubert.com";
 
 function buildPilotBrief() {
   if (!pilotText || !pilotMail) return;
-  const text = `Engagement: ${selections.product}. Price anchor: ${selections.price}. Goal: ${selections.detail}. Environment: ${selections.environment}. First proof target: ${selections.proof}. Desired movement: ${selections.urgency}. Next step: confirm scope, available materials, technical constraints, and any grant or funding opportunity information that can be forwarded.`;
+  const text = `Looking for help with ${selections.area} — primarily ${selections.help}. Main goal: ${selections.goal}. Timeframe: ${selections.timeframe}. Next step: a short consult to confirm scope and the best first step.`;
   pilotText.textContent = text;
-  pilotMail.href = `mailto:${contactEmail}?subject=${encodeURIComponent("Schubert Consulting brief: " + selections.product)}&body=${encodeURIComponent(text + "\n\nName:\nOrganization:\nPhone/email:\nLocation/site details:\nRobotics or AI R&D context:\nGrant or funding opportunity to forward, if any:\nRelevant links/files/examples:\n")}`;
+  pilotMail.href = `mailto:${contactEmail}?subject=${encodeURIComponent("Schubert Consulting brief")}&body=${encodeURIComponent(text + "\n\nName:\nOrganization:\nPhone/email:\nProject context:\nRelevant links/files/examples:\n")}`;
 }
 
 function activateButton(button) {
@@ -27,10 +25,6 @@ function activateButton(button) {
     candidate.setAttribute("aria-pressed", String(active));
   });
   selections[group.dataset.choice] = button.dataset.value;
-  if (group.dataset.choice === "product") {
-    selections.price = button.dataset.price || selections.price;
-    selections.detail = button.dataset.detail || selections.detail;
-  }
   buildPilotBrief();
 }
 
@@ -43,12 +37,5 @@ document.querySelectorAll("[data-choice]").forEach((group) => {
     if (button) activateButton(button);
   });
 });
-
-const params = new URLSearchParams(window.location.search);
-const requestedProduct = params.get("product");
-if (requestedProduct) {
-  const button = [...document.querySelectorAll('[data-choice="product"] button[data-value]')].find((candidate) => candidate.dataset.value.toLowerCase() === requestedProduct.toLowerCase());
-  if (button) activateButton(button);
-}
 
 buildPilotBrief();
