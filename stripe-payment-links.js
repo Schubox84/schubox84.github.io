@@ -26,7 +26,7 @@ window.SCHUBERT_OFFERS = [
   {
     id: "field-it-automation-rescue",
     name: "Field IT / Automation Rescue",
-    priceAnchor: "$125-$175/hour",
+    priceAnchor: "$125-$175/hour (4-hour minimum)",
     href: "contact.html#mapper"
   },
   {
