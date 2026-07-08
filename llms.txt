@@ -1,21 +1,25 @@
 # Schubert Consulting LLC
 
-Schubert Consulting LLC is a Michigan robotics and AI R&D company.
+Schubert Consulting LLC is a Michigan IT consulting firm.
 
-Primary public focus:
-- Robotics R&D
-- AI R&D systems
-- Applied automation
-- Embedded sensing
-- Prototype evidence
-- Looking for grants and funding to continue research and development
+What the company is:
+- A traditional consulting company — expertise for hire, not a product company.
+- Full-spectrum IT consulting: infrastructure, systems, software, networks, data, security hygiene.
+- Deep specialization in applied AI, workflow automation, robotics, and embedded systems.
+- Clients hire the firm to assess, advise, build, and hand off. Clients own the results.
 
 Public language:
-- Schubert Consulting LLC is the company.
-- When grants or funding are discussed, say Schubert Consulting LLC is looking for grants and funding to continue research and development and appreciates forwarded information.
-- Do not use outside product or brand names for the company.
-- Do not invent a specific first product, market, customer, deployed system, approved funding, patent, certification, or production autonomy unless Ian confirms it.
+- Schubert Consulting LLC helps people and companies solve technology problems.
+- The company does NOT sell a product and is NOT seeking investment or funding.
+- Do not describe the company as a startup, a product company, or as raising money.
+- Do not invent a specific product, market, customer, deployed system, patent, certification, or production autonomy unless Ian confirms it.
+
+Engagement types:
+- Consult & assessment (written recommendations)
+- Readiness Sprint ($750 flat, remote, one workflow mapped and assessed)
+- Project build (scoped implementation with handoff)
+- Advisory retainer (ongoing senior technical advice)
 
 Contact:
-- Schubert Consulting LLC
+- Schubert Consulting LLC, Grand Rapids, Michigan
 - Email: schubertconsultingllc@ianschubert.com
