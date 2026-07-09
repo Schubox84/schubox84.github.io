@@ -435,3 +435,5 @@ h3 { margin: .35rem 0 .55rem; font-size: 1.24rem; line-height: 1.15; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; }
 }
+
+.founder-photo { border-radius: 50%; display: block; margin: 0 0 1rem; }
