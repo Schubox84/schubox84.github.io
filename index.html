@@ -24,8 +24,10 @@ nav .wrap{display:flex;gap:18px;align-items:center}
 nav a{color:#fff;text-decoration:none;font-size:15px}
 nav .mark{height:26px;vertical-align:middle;margin-right:auto}
 /* HERO */
-header{position:relative;color:#fff;text-align:center;padding:110px 0 90px;
-  background:linear-gradient(rgba(15,25,40,.55),rgba(15,25,40,.65)),url('assets/transformation-scene-professional.webp') center/cover no-repeat}
+header{position:relative;color:#fff;text-align:center;padding:110px 0 90px;overflow:hidden}
+.hero-bg{position:absolute;inset:-12% 0;background:url('assets/transformation-scene-professional.webp') center/cover no-repeat;will-change:transform;z-index:0}
+header>*:not(.hero-bg){position:relative;z-index:1}
+@media (prefers-reduced-motion: reduce){.hero-bg{inset:0}}
 header .eyebrow{font-family:Arial,sans-serif;letter-spacing:3px;font-size:13px;color:#ffd98a;margin-bottom:14px}
 header h1{font-size:44px;line-height:1.15;margin-bottom:16px;text-shadow:0 2px 8px rgba(0,0,0,.45)}
 header p.sub{max-width:640px;margin:0 auto 24px;font-size:19px;text-shadow:0 1px 4px rgba(0,0,0,.5)}
@@ -67,6 +69,7 @@ footer{padding:46px 0 60px}
 </nav>
 
 <header>
+  <div class="hero-bg" aria-hidden="true"></div>
   <div class="wrap">
     <div class="eyebrow">MICHIGAN IT SERVICES &middot; 24/7 SUPPORT</div>
     <h1>All things IT. Done right. Done fast.</h1>
@@ -122,6 +125,23 @@ footer{padding:46px 0 60px}
     </div>
   </div>
 </footer>
-
 </body>
+<script>
+(function(){
+  var bg=document.querySelector('.hero-bg');
+  if(!bg) return;
+  if(window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  var ticking=false;
+  function frame(){
+    var max=Math.max(1,document.documentElement.scrollHeight-window.innerHeight);
+    var p=Math.min(Math.max(window.scrollY/max,0),1);
+    // gentle drift: rises and slides as you scroll the page
+    bg.style.transform='translate3d('+(-p*4)+'%,'+(p*9)+'%,0)';
+    ticking=false;
+  }
+  window.addEventListener('scroll',function(){if(!ticking){ticking=true;requestAnimationFrame(frame);}},{passive:true});
+  window.addEventListener('resize',frame);
+  frame();
+})();
+</script>
 </html>
