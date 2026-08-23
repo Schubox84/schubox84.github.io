@@ -3,7 +3,11 @@
   --card:#ffffff; --line:#d8d4c8; --accent:#0f766e;
 }
 *{box-sizing:border-box;margin:0;padding:0}
-body{font-family:Georgia,'Times New Roman',serif;background:var(--paper);color:var(--ink);line-height:1.55}
+body{font-family:Georgia,'Times New Roman',serif;background:var(--navy);color:var(--ink);line-height:1.55}
+.page-bg{position:fixed;inset:-12% 0;z-index:-1;
+  background:linear-gradient(rgba(15,25,40,.58),rgba(15,25,40,.80)),url('assets/transformation-scene-professional.webp') center/cover no-repeat;
+  will-change:transform}
+@media (prefers-reduced-motion: reduce){.page-bg{inset:0}}
 .wrap{max-width:960px;margin:0 auto;padding:0 20px}
 a{color:var(--navy)}
 .btn{display:inline-block;padding:12px 22px;border-radius:10px;text-decoration:none;font-weight:bold;margin:6px 8px 6px 0}
@@ -15,19 +19,16 @@ nav .wrap{display:flex;gap:18px;align-items:center}
 nav a{color:#fff;text-decoration:none;font-size:15px}
 nav .mark{height:26px;vertical-align:middle;margin-right:auto}
 /* HERO */
-header{position:relative;color:#fff;text-align:center;padding:110px 0 90px;overflow:hidden;
-  background:linear-gradient(rgba(15,25,40,.55),rgba(15,25,40,.65)),url('assets/transformation-scene-professional.webp') center/cover no-repeat;
-  background-attachment:scroll}
-.hero-bg{display:none;position:absolute;inset:-14% 0;background:url('assets/transformation-scene-professional.webp') center/cover no-repeat;will-change:transform;z-index:0}
-.js-anim .hero-bg{display:block}
-header>*:not(.hero-bg){position:relative;z-index:1}
-@media (prefers-reduced-motion: reduce){.js-anim .hero-bg{display:none}}
+header{position:relative;color:#fff;text-align:center;padding:130px 0 110px}
+header .eyebrow{text-shadow:0 2px 6px rgba(0,0,0,.6)}
+header h1{text-shadow:0 2px 10px rgba(0,0,0,.6)}
+header p.sub{text-shadow:0 1px 6px rgba(0,0,0,.6)}
 header .eyebrow{font-family:Arial,sans-serif;letter-spacing:3px;font-size:13px;color:#ffd98a;margin-bottom:14px}
 header h1{font-size:44px;line-height:1.15;margin-bottom:16px;text-shadow:0 2px 8px rgba(0,0,0,.45)}
 header p.sub{max-width:640px;margin:0 auto 24px;font-size:19px;text-shadow:0 1px 4px rgba(0,0,0,.5)}
 /* SERVICES */
-section.services{padding:56px 0 30px}
-h2.sec{text-align:center;font-size:28px;margin-bottom:28px}
+section.services{padding:64px 0 34px}
+h2.sec{text-align:center;font-size:28px;margin-bottom:28px;color:#fff;text-shadow:0 2px 8px rgba(0,0,0,.55)}
 .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
 .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px}
 .card h3{font-size:19px;margin-bottom:8px;color:var(--navy)}
@@ -36,7 +37,9 @@ h2.sec{text-align:center;font-size:28px;margin-bottom:28px}
 .proof{background:var(--navy);color:#fff;text-align:center;padding:22px 10px;font-family:Arial,sans-serif;font-size:15px}
 .proof span{margin:0 14px;white-space:nowrap;display:inline-block}
 /* ABOUT */
-section.about{padding:48px 0 20px;max-width:720px;margin:0 auto;text-align:center}
+section.about{padding:48px 0 20px;max-width:760px;margin:0 auto;text-align:center}
+section.about .wrap{background:rgba(15,25,40,.55);border:1px solid rgba(255,255,255,.18);border-radius:16px;padding:30px 34px;color:#fff;backdrop-filter:blur(3px)}
+section.about .wrap em{color:#ffd98a}
 section.about p{margin-bottom:12px;font-size:17px}
 /* FEDERAL */
 section.federal{padding:40px 0 10px}
@@ -49,7 +52,7 @@ section.federal{padding:40px 0 10px}
 .naics{text-align:center;font-size:14px;color:#374151;margin-bottom:8px}
 .fed-note{text-align:center;font-size:13.5px;color:var(--muted)}
 /* CARD FOOTER */
-footer{padding:46px 0 60px}
+footer{padding:56px 0 70px}
 .business-card{max-width:520px;margin:0 auto;background:var(--card);border:2px solid var(--navy);
   border-radius:16px;padding:30px 34px;text-align:center;box-shadow:0 10px 30px rgba(31,58,95,.18)}
 .business-card img.mark{height:54px;margin-bottom:12px}
