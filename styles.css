@@ -4,10 +4,13 @@
 }
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:Georgia,'Times New Roman',serif;background:var(--navy);color:var(--ink);line-height:1.55}
-.page-bg{position:fixed;inset:-12% -10%;z-index:-1;
-  background:linear-gradient(rgba(15,25,40,.58),rgba(15,25,40,.80)),url('assets/transformation-scene-professional.webp') center/cover no-repeat;
-  will-change:transform}
-@media (prefers-reduced-motion: reduce){.page-bg{inset:0}}
+.page-bg{position:fixed;inset:0;z-index:-1;
+  background:
+    linear-gradient(rgba(15,25,40,.50),rgba(15,25,40,.72)),
+    url('assets/transformation-scene-professional.webp') left center/170% auto no-repeat;
+  will-change:background-position}
+.no-js-fallback .page-bg{background-size:cover;background-position:center}
+@media (prefers-reduced-motion: reduce){.page-bg{background-size:cover;background-position:center}}
 .wrap{max-width:960px;margin:0 auto;padding:0 20px}
 a{color:var(--navy)}
 .btn{display:inline-block;padding:12px 22px;border-radius:10px;text-decoration:none;font-weight:bold;margin:6px 8px 6px 0}
