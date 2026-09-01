@@ -20,7 +20,7 @@ a{color:var(--navy)}
 nav{background:var(--navy);color:#fff;padding:10px 0;font-family:Arial,sans-serif}
 nav .wrap{display:flex;gap:18px;align-items:center}
 nav a{color:#fff;text-decoration:none;font-size:15px}
-nav .mark{height:26px;vertical-align:middle;margin-right:auto}
+nav .mark{height:36px;vertical-align:middle;margin-right:auto}
 /* HERO */
 header{position:relative;color:#fff;text-align:center;padding:130px 0 110px}
 header .eyebrow{text-shadow:0 2px 6px rgba(0,0,0,.6)}
@@ -58,10 +58,11 @@ section.federal{padding:40px 0 10px}
 footer{padding:56px 0 70px}
 .business-card{max-width:520px;margin:0 auto;background:var(--card);border:2px solid var(--navy);
   border-radius:16px;padding:30px 34px;text-align:center;box-shadow:0 10px 30px rgba(31,58,95,.18)}
-.business-card img.mark{height:54px;margin-bottom:12px}
+.business-card img.mark{height:76px;margin-bottom:12px}
 .business-card .name{font-size:23px;font-weight:bold;color:var(--navy)}
 .business-card .tag{color:var(--muted);font-size:14.5px;margin-bottom:14px}
 .business-card .tel{display:block;font-size:27px;color:var(--navy);text-decoration:none;font-weight:bold;margin-bottom:6px}
-.business-card .mail{font-size:15px;color:var(--muted)}
+.business-card .mail{font-size:15px;color:var(--muted);overflow-wrap:anywhere}
+.business-card .mail a{color:inherit}
 .business-card .area{margin-top:12px;font-size:13.5px;color:var(--muted);font-family:Arial,sans-serif}
 @media(max-width:600px){header h1{font-size:32px} header p.sub{font-size:17px}}
